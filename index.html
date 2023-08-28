@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List | Project</title>
+
+    <!-- ---------- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="box-border">
+    <div class="my-container w-full min-h-screen p-2">
+
+        <!-- <div class="todo-app w-full max-w-xl h-[24rem] bg-white mt-[100px] mb-[20px] mx-auto pt-10 px-7 pb-18 rounded-xl overflow-hidden">              -->
+        <div
+            class="todo-app w-full max-w-xl bg-white mt-[100px] mb-[20px] mx-auto pt-10 px-7 pb-5 rounded-xl overflow-hidden">
+            <!-- --- Heading text & Images -->
+            <h2 class="text-xl font-extrabold text-purple-950 flex items-center mb-5">
+                To-Do List
+                <img class="w-8 ml-3" src="images/icon.png" alt="Unable to Reload Image">
+            </h2>
+
+            <!-- ----- Input field & button -->
+            <form action="">
+                <div class="row flex items-center justify-between rounded-3xl px-6 mb-4 relative">
+                    <input class="flex-1 border-none rounded-full outline-none p-4 pr-40 text-base bg-slate-200 "
+                        type="text" id="input-box" autofocus="autofocus" placeholder="Add Your Note Here ...">
+                    <button id="submit-btn" type="submit"
+                        class="bg-purple-500 hover:bg-purple-700 text-white font-bold rounded-full border-none outline-none py-4 px-12 absolute right-6 "
+                        onclick="addTask()">Add</button>
+                </div>
+            </form>
+            <hr>
+            <!-- ------ List Container -->
+            <ul id="list-container" class="h-[30rem] overflow-y-scroll break-words ">
+                <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li> -->
+            </ul>                        
+        </div>
+
+    </div>
+
+    <!-- ----------- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ----------- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
